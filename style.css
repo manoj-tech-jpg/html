@@ -1,95 +1,138 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'poppins', sans-serif;
-    box-sizing: border-box;
+
+.landing-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(129, 125, 125);
+  background-image: ("https://cdn.shopify.com/s/files/1/0004/4630/0222/files/Statement_Lighting_-_7_Ways_To_Make_a_Statement_In_Your_Living_Room_-_LuxDeco.com.jpg?v=1563185826"); /* Set your image here */
+  background-size: cover;    /* Make the image cover the entire page */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  background-attachment: fixed; 
 }
-body{
-    background: #222;
-}
-.card{
-    width: 90%;
-    max-width: 470px;
-    background: linear-gradient(135deg, #00feba, #5b548a);
-    color: #fff;
-    margin: 100px auto 0;
-    border-radius: 20px;
-    padding: 40px 35px;
+
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #b4b0b0;
+  }
+  
+  header {
+    background: #333;
+    padding: 1rem 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-}
-.search{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.search input{
-    border: 0;
-    outline: 0;
-    background: #ebfffc;
-    color: #555;
-    padding: 10px 20px;
-    height: 60px;
-    border-radius: 30px;
-    flex: 1;
-    margin-right: 16px;
-    font-size: 18px;
-
-}
-.search button{
-    border: 0;
-    outline: 0;
-    background: #ebfffc;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+  }
+  
+  .hero p {
+    margin: 1rem 0;
+  }
+  
+  .hero button {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    font-size: 1rem;
     cursor: pointer;
-
-}
-.search button img{
-    width: 16px;
-
-}
-.weather-icon{
-    width: 170px;
-    margin-top: 30px;
-}
-.weather h1{
-    font-size: 80px;
-    font-weight: 500;
-}
-.weather h2{
-    font-size: 45px;
-    font-weight: 400;
-    margin-top: -10px;
-}
-.details{
+  }
+  
+  .about, .products, .contact {
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  
+  .about p, .products p {
+    width: 60%;
+    margin: 1rem auto;
+  }
+  
+  .products .product-container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    margin-top: 50px;
-}
-.col{
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .product-item {
+    width: 30%;
+    background-color: rgb(197, 188, 188);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .product-item img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .contact form 
+  {
     display: flex;
-    align-items: center;
-    text-align: left;
-}
-.col img{
-    width: 40px;
-    margin-right: 10px;
-}
-.humidity, .wind{
-    font-size: 28px;
-    margin-top: -6px;
-}
-.weather{
-    display: none;
-}
-.error{
-    text-align: left;
-    margin-left: 10px;
-    font-size: 14px;
-    margin-top: 10px;
-    display: none;
-}
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  .contact input, .contact textarea {
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact button {
+    padding: 1rem;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
